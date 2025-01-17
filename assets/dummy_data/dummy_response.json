@@ -1,0 +1,53 @@
+{
+    "bunt_foods": {
+        "categories": {
+            "meals": {
+                "kota_meals": {
+                    "base_kota": {
+                        "id": "bk1",
+                        "image": "assets/images/kota/kota_chips_1.jpg",
+                        "discount": 0,
+                        "about": {
+                            "en": "A classic kota meal made fresh.",
+                            "es": "Una comida clásica kota hecha fresca."
+                        },
+                        "rating": 4.5,
+                        "price": {
+                            "small": 20.0,
+                            "medium": 25.0,
+                            "large": 30.0
+                        },
+                        "options": ["small", "medium", "large"],
+                        "availability": true,
+                        "prep_time": 15,
+                        "vendor": "Local Deli",
+                        "tags": ["local", "quick"]
+                    }
+                }
+            },
+            "drinks": {
+                "cola": {
+                    "fanta": {
+                        "id": "d1",
+                        "price": 22.2,
+                        "range": [],
+                        "availability": true
+                    },
+                    "coke": {
+                        "id": "d2",
+                        "price": 20.0,
+                        "range": [],
+                        "availability": true
+                    }
+                }
+            },
+            "sweets": {
+                "gummie_bears": {
+                    "id": "s1",
+                    "price": 1.5,
+                    "availability": true
+                }
+            }
+        }
+    }
+}
