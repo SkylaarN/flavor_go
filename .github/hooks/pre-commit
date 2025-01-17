@@ -1,2 +1,2 @@
-# Exit successfully
-exit 0
+#!/bin/sh
+echo " before commit"
