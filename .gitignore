@@ -1,3 +1,25 @@
+# BY INK42
+linux
+macos
+windows
+android
+ios
+web
+.github
+
+# Exclude build artifacts
+build/
+*.iml
+.idea/
+.vscode/
+
+# Exclude IDE-specific files
+*.dart_tool/
+.DS_Store
+
+
+
+
 # Miscellaneous
 *.class
 *.log
