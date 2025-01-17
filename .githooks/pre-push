@@ -1,0 +1,29 @@
+#!/bin/sh
+
+echo "Executing before push checking hook"
+
+
+############## RUNNING flutter analyze ##################
+result=$(flutter analyze --no-fatal-infos --no-fatal-warnings 2>&1)
+
+
+if [[ -n "$result" ]]; then
+  echo "Flutter analyze found issues:"
+  echo "$result"
+  echo "Please fix the issues and try committing again."
+  exit 1
+fi
+
+echo "Flutter analyze successful."
+
+############# RUNUNG flutter test ############
+echo "Running Flutter tests"
+flutter test
+
+# Check for test failures
+if [[ $? -ne 0 ]]; then
+  echo "Flutter tests failed. Please fix the test failures and try committing again."
+  exit 1
+fi
+
+echo "All checks passed. Commit successful."
